@@ -1,0 +1,34 @@
+GET http://localhost:5082/games
+
+###
+GET http://localhost:5082/games/372ca2c5-832e-46b5-9f6b-347b5d518f68
+
+###
+POST http://localhost:5082/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genreId": "5848aecd-785a-45de-b3fb-1fac8f5794c1",
+    "price": 19.99,
+    "releaseDate": "2011-11-18",
+    "description" : "Abc"
+}
+
+###
+PUT http://localhost:5082/games/372ca2c5-832e-46b5-9f6b-347b5d518f68
+Content-Type: application/json
+
+{
+    "name": "Minecraft II",
+    "genreId": "5848aecd-785a-45de-b3fb-1fac8f5794c1",
+    "price": 9.99,
+    "releaseDate": "1992-07-15",
+    "description" : "Abc"
+}
+
+###
+DELETE http://localhost:5082/games/885492bd-b801-4fae-9cc1-dbda99ad25b0
+
+###
+GET http://localhost:5082/genres
